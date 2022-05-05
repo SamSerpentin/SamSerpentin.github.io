@@ -1,0 +1,100 @@
+:root {
+  --dark: #202020;
+  --grey: rgba(128, 128, 128, 0.2);
+  --system-message: #aaaaaa;
+  --small: 12px;
+  --medium: 24px;
+  --large: 36px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  scrollbar-color: var(--grey) var(--dark);
+  scrollbar-width: var(--small);
+}
+
+::-webkit-scrollbar {
+  width: var(--small);
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--grey);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grey);
+}
+
+html {
+  font-size: 20px;
+}
+
+#main {
+  background-color: var(--dark);
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--large);
+}
+
+#player {
+  border: 0;
+}
+
+#chat {
+  height: 774px;
+  min-width: 440px;
+  padding-left: var(--medium);
+  position: relative;
+}
+
+#chat, #entry, #messages {
+  background-color: var(--dark);
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#petal {
+  font-size: 4rem;
+  right: 12px;
+  bottom: 112px;
+  opacity: 0.3;
+  mix-blend-mode: screen;
+  position: absolute;
+  user-select: none;
+  z-index: 1;
+}
+
+#messages {
+  height: 85%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+#entry {
+  border: 2px solid var(--grey);
+  height: 15%;
+  margin: 0;
+  padding: var(--small) 16px;
+  resize: none;
+  width: 100%;
+  scrollbar-width: 10px;
+}
+#entry:focus {
+  outline: 0;
+}
+
+#entry::-webkit-scrollbar {
+  width: 10px;
+}
+
+.msg--system {
+  color: var(--system-message);
+}

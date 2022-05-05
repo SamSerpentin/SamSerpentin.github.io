@@ -1,3 +1,2 @@
-## Hey, I'm Samael.
-
-This site is still WIP.
+# petal
+a cute web chat by a cuter streamer
